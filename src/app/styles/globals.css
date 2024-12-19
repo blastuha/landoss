@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import "./fonts.scss";
 
 :root {
   --background: #000a0e;
   --foreground: #ffffff;
   --green-1: #03eb91;
+  --green-2: #01161e;
   --white-1: #f7f7f7;
 }
 
