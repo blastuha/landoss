@@ -5,7 +5,10 @@
   --foreground: #ffffff;
   --green-1: #03eb91;
   --green-2: #01161e;
+  --green-3: #061c24;
   --white-1: #f7f7f7;
+  --text-btn-1: #000a0e;
+  --bg-btn-hover: #03e1a6;
 }
 
 /* Указываем box sizing */
