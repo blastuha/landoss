@@ -65,6 +65,19 @@ const MainSection = () => {
           </div>
         </div>
       </div>
+      {/* Ваша эффективность — наше вдохновение! */}
+      <div className={styles["main-section__effective"]}>
+        <h1 className={styles["main-section__effective-title"]}>
+          Ваша эффективность — наше вдохновение!
+        </h1>
+        <p className={styles["main-section__effective-subtitle"]}>
+          Станьте лидером, который управляет будущим своего бизнеса
+        </p>
+        <div className={styles["main-section__effective-buttons"]}>
+          <CustomButton>Записаться</CustomButton>
+          <CustomButton variant="outlined">Посмотреть программу</CustomButton>
+        </div>
+      </div>
     </section>
   );
 };

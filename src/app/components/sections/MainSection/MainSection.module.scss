@@ -66,6 +66,7 @@
     }
   }
 
+  //  Form
   &__form-block {
     height: 100%;
   }
@@ -116,5 +117,37 @@
         margin-right: 16px;
       }
     }
+  }
+
+  // Effective
+  &__effective {
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 20px;
+  }
+
+  &__effective-title {
+    font-family: "TTTravels", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.17;
+    padding-top: 4px;
+    padding-bottom: 14px;
+    color: var(--green-1);
+  }
+
+  &__effective-subtitle {
+    line-height: 1.55;
+    margin-top: -6px;
+    padding-bottom: 3px;
+    font-size: 18px;
+    color: var(--white-1);
+    font-weight: 500;
+  }
+
+  &__effective-buttons {
+    display: flex;
+    gap: 20px;
+    padding-top: 60px;
   }
 }
