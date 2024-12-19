@@ -66,7 +66,7 @@ const MainSection = () => {
         </div>
       </div>
       {/* Ваша эффективность — наше вдохновение! */}
-      <div className={styles["main-section__effective"]}>
+      {/* <div className={styles["main-section__effective"]}>
         <h1 className={styles["main-section__effective-title"]}>
           Ваша эффективность — наше вдохновение!
         </h1>
@@ -77,7 +77,7 @@ const MainSection = () => {
           <CustomButton>Записаться</CustomButton>
           <CustomButton variant="outlined">Посмотреть программу</CustomButton>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

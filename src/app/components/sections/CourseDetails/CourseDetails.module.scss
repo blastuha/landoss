@@ -1,0 +1,123 @@
+.course-details {
+  width: 100%;
+
+  //  Effective
+
+  &__effective {
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 20px;
+  }
+
+  &__effective-title {
+    font-family: "TTTravels", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.17;
+    padding-top: 4px;
+    padding-bottom: 14px;
+    color: var(--green-1);
+  }
+
+  &__effective-subtitle {
+    line-height: 1.55;
+    margin-top: -6px;
+    padding-bottom: 3px;
+    font-size: 18px;
+    color: var(--white-1);
+    font-weight: 500;
+  }
+
+  &__effective-buttons {
+    display: flex;
+    gap: 20px;
+    padding-top: 60px;
+  }
+
+  // Info
+
+  &__info {
+    display: flex;
+    padding: 60px 0;
+  }
+
+  &__item {
+    max-width: 560px;
+    width: 100%;
+    text-align: center;
+    margin: 0 20px;
+  }
+
+  &__title {
+    color: var(--white-1);
+    font-family: "TTTravels", Arial, sans-serif;
+    font-weight: 600;
+    line-height: 1.23;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .divider-custom {
+    margin-top: 14px !important;
+    margin-bottom: 14px;
+    border: 0;
+    height: 1px;
+    background-color: var(--divider-1);
+    opacity: 1;
+  }
+
+  &__text {
+    color: var(--white-1);
+    margin-top: 10px;
+
+    line-height: 1.55;
+    padding-top: 4px;
+    padding-bottom: 6px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  // Content
+
+  &__content {
+    display: flex;
+    padding: 60px 0;
+  }
+
+  &__video {
+    width: 100%;
+    margin: 0 20px;
+    max-width: 460px;
+
+    video {
+      max-width: 500px;
+      width: 100%;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  }
+
+  &__description {
+    width: 100%;
+    max-width: 660px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: var(--white-1);
+
+    &__heading {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--green-1);
+      margin-bottom: 20px;
+    }
+
+    &__paragraph {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+  }
+}

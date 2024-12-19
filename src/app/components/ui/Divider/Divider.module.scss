@@ -1,0 +1,12 @@
+.divider {
+  border: 0;
+  height: 1px;
+  background-color: var(--divider-1);
+  opacity: 1;
+
+  &--fullWidth {
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    width: 100vw;
+  }
+}
