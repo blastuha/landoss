@@ -54,7 +54,7 @@ export const CourseDetails = () => {
         {/* Описание */}
         <div className={styles["course-details__description"]}>
           <h2 className={styles["course-details__heading"]}>
-            Мы учим тому, что будет в тренде даже через 10 лет!
+            Мы учим тому, что будет <br /> в тренде даже через 10 лет!
           </h2>
           <p className={styles["course-details__paragraph"]}>
             Пока мир только догадывается, как использовать искусственный
@@ -69,6 +69,7 @@ export const CourseDetails = () => {
           </p>
         </div>
       </div>
+      <Divider fullWidth />
     </section>
   );
 };

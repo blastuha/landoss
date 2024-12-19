@@ -106,18 +106,21 @@
     margin-left: 20px;
     margin-right: 20px;
     color: var(--white-1);
+  }
 
-    &__heading {
-      font-size: 24px;
-      font-weight: 700;
-      color: var(--green-1);
-      margin-bottom: 20px;
-    }
+  &__heading {
+    font-family: "TTTravels", Arial, sans-serif;
+    font-weight: 600;
+    color: var(--white-1);
+    font-size: 32px;
+    line-height: 1.5;
+  }
 
-    &__paragraph {
-      font-size: 16px;
-      line-height: 1.5;
-      margin-bottom: 20px;
-    }
+  &__paragraph {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.7;
+    color: var(--white-1);
+    font-weight: 500;
   }
 }
