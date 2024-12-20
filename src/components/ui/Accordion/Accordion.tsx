@@ -7,11 +7,11 @@ import {
   Typography,
 } from "@mui/material";
 import { PlusIcon } from "../Icons/PlusIcon/PlusIcon";
-import "./Accordeon.scss";
+import "./Accordion.scss";
 
 interface AccordionItem {
-  title: string;
-  content: React.ReactNode;
+  title: React.JSX.Element | string;
+  content: React.ReactNode | string;
 }
 
 interface AccordionComponentProps {
@@ -21,42 +21,52 @@ interface AccordionComponentProps {
 export const AccordionComponent: React.FC<AccordionComponentProps> = ({
   items,
 }) => {
-  const [expanded, setExpanded] = useState<string | false>(false);
+  const [expandedPanels, setExpandedPanels] = useState<string[]>([]);
 
   const handleChange =
     (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
-      setExpanded(isExpanded ? panel : false);
+      setExpandedPanels(
+        (prevExpanded) =>
+          isExpanded
+            ? [...prevExpanded, panel] // Добавляем панель, если она раскрыта
+            : prevExpanded.filter((id) => id !== panel) // Убираем панель, если она закрыта
+      );
     };
 
   return (
     <div>
       {items.map((item, index) => {
         const panelId = `panel-${index}`;
+        const isExpanded = expandedPanels.includes(panelId); // Проверяем, раскрыта ли панель
         return (
           <Accordion
-            className="summary"
+            className="accordion"
             key={index}
-            expanded={expanded === panelId}
+            expanded={isExpanded}
             onChange={handleChange(panelId)}
             sx={{
               ".MuiAccordionSummary-expandIconWrapper": {
-                transform: "none", // Убираем вращение
-                transition: "none", // Убираем анимацию
+                transform: "none",
+                transition: "none",
               },
               ".MuiAccordionSummary-expandIconWrapper.Mui-expanded": {
-                transform: "none", // Убираем вращение в раскрытом состоянии
+                transform: "none",
               },
+              background: "#000a0e",
             }}
           >
             <AccordionSummary
-              expandIcon={<PlusIcon expanded={expanded === panelId} />}
+              className="accordion__summary"
+              expandIcon={<PlusIcon expanded={isExpanded} />}
               aria-controls={`${panelId}-content`}
               id={`${panelId}-header`}
             >
-              <Typography style={{ fontWeight: 700 }}>{item.title}</Typography>
+              <Typography className="title">{item.title}</Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography component="div">{item.content}</Typography>
+              <Typography component="div" className="content">
+                {item.content}
+              </Typography>
             </AccordionDetails>
           </Accordion>
         );

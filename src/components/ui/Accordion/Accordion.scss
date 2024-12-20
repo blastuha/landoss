@@ -1,0 +1,47 @@
+.accordion:hover .icon .circle {
+  background-color: var(--purple-1);
+}
+
+.accordion:hover .icon svg {
+  color: var(--white-1);
+}
+
+.accordion__summary {
+  position: relative;
+  width: 100%;
+  padding: 27px 50px 27px 0;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+  border-top: 1px solid var(--white-1);
+}
+
+.title {
+  cursor: pointer;
+  font-family: "TTTravels", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--white-1);
+}
+
+.content {
+  font-weight: 300;
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--white-1);
+  font-family: "Manrope";
+
+  ul {
+    padding-left: 20px;
+    list-style: decimal;
+  }
+}
+
+.highlighted {
+  color: var(--green-1);
+}
