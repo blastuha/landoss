@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import Container from "../../container/Container";
 import styles from "./Header.module.scss";
+import Container from "@/components/container/Container";
 
 export const Header = () => {
   return (

@@ -1,0 +1,18 @@
+.program {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+
+  &__title {
+    font-family: "TTTravels", Arial, sans-serif;
+    font-weight: 600;
+    line-height: 1.23;
+    text-align: center;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 105px;
+    color: #f7f7f7;
+    font-size: 32px;
+  }
+}

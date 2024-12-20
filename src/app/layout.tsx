@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
-import "./styles/globals.css";
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
+import { ThemeProvider } from "@mui/material/styles";
+import "../styles/globals.css";
+import theme from "@/theme";
 
 export const metadata: Metadata = {
   title: "Cyber-Misha",
@@ -13,7 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <AppRouterCacheProvider options={{ enableCssLayer: true }}>
+        <ThemeProvider theme={theme}>
+          <body>{children}</body>
+        </ThemeProvider>
+      </AppRouterCacheProvider>
     </html>
   );
 }

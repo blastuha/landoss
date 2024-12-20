@@ -3,10 +3,12 @@
 :root {
   --background: #000a0e;
   --foreground: #ffffff;
+  --black-1: #000a0e;
   --green-1: #03eb91;
   --green-2: #01161e;
   --green-3: #061c24;
   --white-1: #f7f7f7;
+  --purple-1: #a125ff;
   --text-btn-1: #000a0e;
   --bg-btn-hover: #03e1a6;
   --bg-btn-black: #000a0e;
