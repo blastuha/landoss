@@ -1,0 +1,83 @@
+.lvl-card {
+  background-color: #fff; /* Белый фон для карточки */
+  border-radius: 8px;
+  width: 100%;
+  max-width: 260px;
+  display: flex;
+  margin: 0 20px;
+  flex-direction: column;
+  overflow: hidden; /* Чтобы скругление применялось к верхней части */
+}
+
+.lvl-card__header {
+  background-color: #03eb91; /* Зеленый верхний блок */
+  padding: 20px;
+  text-align: center;
+}
+
+.lvl-card__level {
+  font-family: "TTTravels", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 8px;
+}
+
+.lvl-card__price {
+  font-family: "TTTravels", Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+}
+
+.lvl-card__credit {
+  margin-top: 8px;
+  font-family: "TTTravels", Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+
+.lvl-card__body {
+  background-color: #000a0e; /* Темный нижний фон */
+  color: #fff;
+  padding: 20px;
+  flex: 1; /* Чтобы тело «растягивалось» по высоте */
+}
+
+.lvl-card__subtitle {
+  font-family: "TTTravels", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+
+.lvl-card__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.lvl-card__list li {
+  margin-bottom: 8px;
+}
+
+.lvl-card__cta {
+  background-color: #03eb91;
+  color: #000;
+  border: none;
+  border-radius: 0 0 8px 8px; /* Скругляем нижние углы */
+  padding: 16px;
+  font-family: "TTTravels", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.lvl-card__cta:hover {
+  background-color: #00d581;
+}

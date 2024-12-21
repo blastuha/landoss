@@ -1,0 +1,27 @@
+.choose-lvl {
+  width: 100%;
+  background-color: #000a0e; /* Тёмный фон */
+  padding: 60px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.choose-lvl__title {
+  font-family: "TTTravels", Arial, sans-serif;
+  font-weight: 600;
+  line-height: 1.23;
+  text-align: center;
+  margin-bottom: 90px;
+  color: #f7f7f7;
+  font-size: 32px;
+  margin-bottom: 90px;
+}
+
+.choose-lvl__cards {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+}
