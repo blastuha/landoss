@@ -6,6 +6,7 @@ import Container from "@/components/container/Container";
 import MainSection from "@/components/sections/MainSection/MainSection";
 import { CourseDetails } from "@/components/sections/CourseDetails/CourseDetails";
 import { Program } from "@/components/sections/Program/Program";
+import { Benefits } from "@/components/sections/Benefits/Benefits";
 
 export const ClientPage = () => {
   return (
@@ -16,6 +17,7 @@ export const ClientPage = () => {
           <MainSection />
           <CourseDetails />
           <Program />
+          <Benefits />
         </Container>
       </main>
     </div>
