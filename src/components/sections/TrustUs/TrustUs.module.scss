@@ -3,7 +3,7 @@
   color: var(--white1);
 
   padding-top: 150px;
-  padding-bottom: 90px;
+
   background-color: var(--black-1);
 }
 
@@ -23,6 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: stretch; /* Растягиваем элементы по высоте */
+  padding-bottom: 30px;
 }
 
 .trust-us__item {
@@ -84,6 +85,7 @@
   line-height: 1.45;
   padding: 50px 0 0 0;
   color: var(--white-1);
+  padding-bottom: 90px;
 
   strong {
     color: var(--green-1);

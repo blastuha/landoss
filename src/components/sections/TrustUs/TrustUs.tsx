@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./TrustUs.module.scss";
 import Image from "next/image";
+import { Divider } from "@/components/ui/Divider/Divider";
 
 export const TrustUs = () => {
   return (
@@ -67,11 +68,13 @@ export const TrustUs = () => {
       </div>
 
       {/* footer */}
+      <Divider className={styles["divider-custom"]} fullWidth />
       <p className={styles["trust-us__footer"]}>
         Наши знания и опыт проверены на практике и востребованы <br />
         крупнейшими компаниями. <strong>Мы — официальные партнёры Сбера</strong>
         , что <br /> подтверждает нашу экспертизу и надёжность.
       </p>
+      <Divider className={styles["divider-custom"]} fullWidth />
     </section>
   );
 };
