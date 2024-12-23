@@ -10,6 +10,7 @@ import { Benefits } from "@/components/sections/Benefits/Benefits";
 import { ChooseLvl } from "@/components/sections/ChooseLvl/ChooseLvl";
 import { Results } from "@/components/sections/Results/Results";
 import { WhyWe } from "@/components/sections/WhyWe/WhyWe";
+import { TrustUs } from "@/components/sections/TrustUs/TrustUs";
 
 export const ClientPage = () => {
   return (
@@ -24,6 +25,7 @@ export const ClientPage = () => {
           <ChooseLvl />
           <Results />
           <WhyWe />
+          <TrustUs />
         </Container>
       </main>
     </div>

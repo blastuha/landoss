@@ -1,0 +1,92 @@
+.trust-us {
+  text-align: center;
+  color: var(--white1);
+
+  padding-top: 150px;
+  padding-bottom: 90px;
+  background-color: var(--black-1);
+}
+
+.trust-us__title {
+  font-family: "TTTravels", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 1.23;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 105px;
+  color: var(--white1);
+}
+
+.trust-us__items {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* Растягиваем элементы по высоте */
+}
+
+.trust-us__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100%;
+  max-width: 360px;
+
+  &:not(:last-child) {
+    border-right: 1px solid #323232;
+  }
+}
+
+.trust-us__icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+.trust-us__icon img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.trust-us__subtitle {
+  font-family: "TTTravels", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.35;
+  padding-bottom: 20px;
+  color: var(--white-1);
+
+  span {
+    color: var(--green-1);
+  }
+}
+
+.trust-us__description {
+  font-family: "TTTravels", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--white-1);
+}
+
+.trust-us__footer {
+  font-family: "TTTravels", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.45;
+  padding: 50px 0 0 0;
+  color: var(--white-1);
+
+  strong {
+    color: var(--green-1);
+    font-weight: 600;
+  }
+}
