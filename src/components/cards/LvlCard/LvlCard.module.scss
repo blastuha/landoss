@@ -1,73 +1,123 @@
 .lvl-card {
-  background-color: #fff; /* Белый фон для карточки */
-  border-radius: 8px;
+  background-color: var(--white-1);
+  border-radius: 12px;
   width: 100%;
   max-width: 260px;
   display: flex;
   margin: 0 20px;
   flex-direction: column;
-  overflow: hidden; /* Чтобы скругление применялось к верхней части */
+  overflow: hidden;
 }
 
 .lvl-card__header {
-  background-color: #03eb91; /* Зеленый верхний блок */
-  padding: 20px;
+  font-family: "TTTravels", Arial, sans-serif;
+  background-color: var(--green-1);
   text-align: center;
+  padding: 0 20px 10px;
+  height: 223px;
 }
 
 .lvl-card__level {
-  font-family: "TTTravels", Arial, sans-serif;
+  padding: 18px 0;
   font-size: 22px;
-  font-weight: 700;
-  color: #000;
+  font-weight: 600;
+  color: var(--black-1);
   margin: 0 0 8px;
+  border-bottom: 1px solid var(--black-1);
 }
 
 .lvl-card__price {
-  font-family: "TTTravels", Arial, sans-serif;
-  font-size: 28px;
   font-weight: 700;
-  color: #000;
-  margin: 0;
+  line-height: 1.23;
+  margin-top: 33px;
+  color: var(--black-1);
+  font-size: 28px;
+  height: 69px;
 }
 
 .lvl-card__credit {
-  margin-top: 8px;
   font-family: "TTTravels", Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
+  font-weight: 600;
+  line-height: 1.55;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  color: var(--black-1);
+  font-size: 16px;
 }
 
 .lvl-card__body {
-  background-color: #000a0e; /* Темный нижний фон */
-  color: #fff;
-  padding: 20px;
-  flex: 1; /* Чтобы тело «растягивалось» по высоте */
+  background-color: var(--white-1);
+  color: var(--black-1);
+  padding: 0 20px;
+  line-height: 1.55;
+  margin-top: 34px;
+  margin-bottom: 3px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Manrope";
+
+  text-align: center;
+  height: 780px;
 }
 
 .lvl-card__subtitle {
-  font-family: "TTTravels", Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 16px;
-  line-height: 1.4;
+  text-align: center;
+  line-height: 1.55;
+  font-family: "Manrope";
+  box-sizing: content-box;
+  font-weight: 700;
+  color: var(--purple-1);
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+
+.lvl-card__subtitle2 {
+  text-align: center;
+  color: var(--black-1);
+  line-height: 1.55;
+  font-size: 15px;
+  font-family: "Manrope";
+  font-weight: 700;
+  margin-bottom: 32px;
+
+  &-text {
+    text-decoration: underline;
+  }
+}
+
+.lvl-card__sticker {
+  text-decoration: none !important;
+}
+
+.lvl-card__group {
+  margin-bottom: 20px;
+}
+
+.lvl-card__group-title {
+  font-weight: bold;
+  font-size: 15px;
+  color: var(--black-1);
+  text-align: center;
 }
 
 .lvl-card__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  text-align: center;
+  color: var(--black-1);
+  line-height: 1.55;
   font-size: 14px;
-  line-height: 1.5;
+  font-weight: 500;
+  font-family: "Manrope";
+  margin: 0;
+  padding-left: 20px;
 }
 
 .lvl-card__list li {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .lvl-card__cta {
-  background-color: #03eb91;
-  color: #000;
+  background-color: var(--green-1);
+  color: var(--black-1);
   border: none;
   border-radius: 0 0 8px 8px; /* Скругляем нижние углы */
   padding: 16px;
@@ -75,9 +125,4 @@
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.lvl-card__cta:hover {
-  background-color: #00d581;
 }
