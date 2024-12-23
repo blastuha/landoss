@@ -1,0 +1,94 @@
+.results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.results__title {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 100%;
+  max-width: 1160px;
+
+  font-family: "TTTravels", Arial, sans-serif;
+  font-weight: 600;
+  line-height: 1.23;
+  text-align: center;
+  margin-bottom: 105px;
+  color: var(--white-1);
+  font-size: 32px;
+}
+
+.results__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: stretch;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1160px;
+}
+
+.results__item {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.results__number {
+  box-sizing: content-box;
+  position: absolute;
+  z-index: 1;
+  line-height: 150px;
+  text-align: center;
+  font-size: 200px;
+  font-family: sans-serif;
+  font-weight: 700;
+  user-select: none;
+  color: var(--green-1);
+  opacity: 0.2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.results__text {
+  font-family: "TTTravels", Arial, sans-serif;
+  z-index: 2;
+  font-weight: 700;
+  padding-top: 65px;
+  padding-bottom: 10px;
+  font-size: 24px;
+  line-height: 1.6;
+  color: var(--white-1);
+}
+
+.results__highlight {
+  color: var(--green-1);
+  font-weight: 700;
+}
+
+.results__button {
+  margin-top: 105px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  background-color: var(--green-1);
+  color: var(--black-1);
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  font-family: "TTTravels", Arial, sans-serif;
+
+  height: 60px;
+  font-size: 16px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
