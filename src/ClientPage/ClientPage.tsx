@@ -9,6 +9,7 @@ import { Program } from "@/components/sections/Program/Program";
 import { Benefits } from "@/components/sections/Benefits/Benefits";
 import { ChooseLvl } from "@/components/sections/ChooseLvl/ChooseLvl";
 import { Results } from "@/components/sections/Results/Results";
+import { WhyWe } from "@/components/sections/WhyWe/WhyWe";
 
 export const ClientPage = () => {
   return (
@@ -22,6 +23,7 @@ export const ClientPage = () => {
           <Benefits />
           <ChooseLvl />
           <Results />
+          <WhyWe />
         </Container>
       </main>
     </div>

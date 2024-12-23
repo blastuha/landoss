@@ -1,0 +1,66 @@
+.why-we {
+  box-sizing: content-box;
+  width: 100vw; /* Полная ширина экрана */
+  left: 50%; /* Для компенсации ограничения контейнера */
+  transform: translateX(-50%); /* Центрируем секцию */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: right top;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  background-image: url("../../../../public/WhyWeBg.png");
+  height: 1271px;
+
+  &__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+
+    @media (max-width: 1200px) {
+      padding-inline: 20px;
+    }
+  }
+
+  &__content {
+    max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    background: var(--white-1);
+    border-radius: 16px;
+
+    font-family: "TTTravels", Arial, sans-serif;
+    color: var(--black-1);
+  }
+
+  &__title {
+    text-align: left;
+    font-family: "TTTravels", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.35;
+    margin-bottom: 18px;
+  }
+
+  &__subtitle {
+    -webkit-font-smoothing: antialiased;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.55;
+    box-sizing: content-box;
+    font-weight: 700;
+    font-family: TTTravels;
+  }
+
+  &__text {
+    font-family: "Manrope", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.55;
+    font-weight: 500;
+  }
+}
