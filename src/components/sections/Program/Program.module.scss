@@ -8,6 +8,10 @@
     margin: 0 10px;
   }
 
+  @media (max-width: 480px) {
+    margin: 0;
+  }
+
   &__title {
     font-family: "TTTravels", Arial, sans-serif;
     font-weight: 600;
@@ -22,6 +26,11 @@
 
     @media (max-width: 960px) {
       margin-bottom: 45px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 24px;
+      line-height: 1.5;
     }
   }
 }

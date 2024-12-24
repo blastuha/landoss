@@ -12,7 +12,7 @@ const MainSection = () => {
           <div className={styles["main-section__content"]}>
             <h1 className={styles["main-section__title"]}>
               «Нейро-
-              <br />
+              {/* <br /> */}
               прорыв БАЗА 2.0» <p>от Black Mesa IT! 🚀</p>
             </h1>
 
