@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "./Header.module.scss";
 import Container from "@/components/container/Container";
+import { Divider } from "@/components/ui/Divider/Divider";
 
 export const Header = () => {
   return (

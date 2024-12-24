@@ -53,6 +53,11 @@
   &__info {
     display: flex;
     padding: 60px 0;
+
+    @media (max-width: 960px) {
+      flex-direction: column;
+      gap: 40px;
+    }
   }
 
   &__item {
@@ -99,6 +104,11 @@
   &__content {
     display: flex;
     padding: 60px 0;
+
+    @media (max-width: 960px) {
+      flex-direction: column;
+      gap: 40px;
+    }
   }
 
   &__video {
@@ -108,6 +118,7 @@
 
     @media (max-width: 1200px) {
       margin: 0 10px;
+      max-width: 100%;
     }
 
     video {
@@ -115,6 +126,10 @@
       width: 100%;
       border-radius: 8px;
       overflow: hidden;
+
+      @media (max-width: 1200px) {
+        max-width: 100%;
+      }
     }
   }
 
