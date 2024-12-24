@@ -41,12 +41,11 @@ export const Benefits = () => {
 
         {/* Правая часть с изображением */}
         <div className={styles["benefits__right"]}>
-          <Image
+          <img
             src={getImageSrc(activeIndex)}
             alt={`Иллюстрация для блока ${items[activeIndex]}`}
-            width={560}
-            height={560}
-            priority
+            // width={560}
+            // height={560}
           />
         </div>
       </div>

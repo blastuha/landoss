@@ -22,12 +22,12 @@ export const ClientPage = () => {
           <MainSection />
           <CourseDetails />
           <Program />
-          {/* <Benefits /> */}
-          {/* <ChooseLvl />
+          <Benefits />
+          <ChooseLvl />
           <Results />
           <WhyWe />
           <TrustUs />
-          <JoinUs /> */}
+          <JoinUs />
         </Container>
       </main>
     </div>

@@ -17,6 +17,10 @@
     height: 500px;
   }
 
+  @media (max-width: 480px) {
+    height: 240px;
+  }
+
   &__container {
     height: 100%;
     display: flex;

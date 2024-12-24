@@ -3,6 +3,10 @@
   padding-bottom: 135px;
   text-align: center;
   margin: 0 10px;
+
+  @media (max-width: 480px) {
+    padding: 90px 0;
+  }
 }
 
 .join-section__title {
@@ -14,6 +18,11 @@
   color: #f7f7f7;
   font-size: 32px;
   line-height: 1.5;
+
+  @media (max-width: 480px) {
+    font-size: 18px;
+    line-height: 1.7;
+  }
 }
 
 .join-section__highlight {
@@ -28,6 +37,10 @@
   font-size: 24px;
   color: #f7f7f7;
   font-family: "Manrope";
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 }
 
 .join-section__contacts {
@@ -38,6 +51,10 @@
   line-height: 1.5;
   font-size: 24px;
   color: #f7f7f7;
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 }
 
 .join-section__link {
@@ -50,12 +67,22 @@
   border-bottom: 1px solid rgb(190, 105, 255);
   box-shadow: none;
   text-decoration: none;
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 }
+
+// Зона кнопки
 
 .join-section__cta-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
 }
 
 .join-section__arrow {
@@ -74,6 +101,20 @@
   bottom: 0;
   margin: auto;
   fill: #be69ff;
+
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+
+.join-section__arrow-mobile {
+  display: none;
+  width: 20px;
+  height: 40px;
+
+  @media (max-width: 480px) {
+    display: block;
+  }
 }
 
 .join-section__button {
@@ -93,8 +134,15 @@
   margin-right: 0;
   text-decoration: none;
   outline: none;
-  color: #000a0e;
+  color: var(--black-1);
   background-color: #03eb91;
   border-radius: 8px;
   cursor: pointer;
+
+  @media (max-width: 480px) {
+    margin-top: 30px;
+    width: 100%;
+    font-size: 18px;
+    height: 60px;
+  }
 }

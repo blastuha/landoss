@@ -11,6 +11,10 @@
   @media (max-width: 1200px) {
     max-width: 600px;
   }
+
+  @media (max-width: 480px) {
+    margin: 0;
+  }
 }
 
 .lvl-card__header {
@@ -19,6 +23,10 @@
   text-align: center;
   padding: 0 20px 10px;
   height: 223px;
+
+  @media (max-width: 480px) {
+    height: 186px;
+  }
 }
 
 .lvl-card__level {
@@ -28,6 +36,11 @@
   color: var(--black-1);
   margin: 0 0 8px;
   border-bottom: 1px solid var(--black-1);
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+    font-weight: 700;
+  }
 }
 
 .lvl-card__price {
@@ -37,6 +50,10 @@
   color: var(--black-1);
   font-size: 28px;
   height: 69px;
+
+  @media (max-width: 480px) {
+    height: fit-content;
+  }
 }
 
 .lvl-card__credit {
@@ -66,6 +83,12 @@
   @media (max-width: 1200px) {
     height: 480px;
   }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+    line-height: 1.4;
+    height: fit-content;
+  }
 }
 
 .lvl-card__subtitle {
@@ -77,6 +100,10 @@
   color: var(--purple-1);
   font-size: 18px;
   margin-bottom: 32px;
+
+  @media (max-width: 480px) {
+    margin-bottom: 20px;
+  }
 }
 
 .lvl-card__subtitle2 {
