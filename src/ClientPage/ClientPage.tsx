@@ -24,10 +24,10 @@ export const ClientPage = () => {
           <Program />
           <Benefits />
           <ChooseLvl />
-          {/* <Results />
+          <Results />
           <WhyWe />
           <TrustUs />
-          <JoinUs /> */}
+          <JoinUs />
         </Container>
       </main>
     </div>

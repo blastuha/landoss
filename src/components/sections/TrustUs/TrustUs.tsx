@@ -38,7 +38,7 @@ export const TrustUs = () => {
             />
           </div>
           <h3 className={styles["trust-us__subtitle"]}>
-            <span>Выпускники</span> <br />
+            <span>Выпускники </span>
             Skolkovo MBA
           </h3>
           <p className={styles["trust-us__description"]}>
@@ -73,12 +73,10 @@ export const TrustUs = () => {
             />
           </div>
           <h3 className={styles["trust-us__subtitle"]}>
-            <span>Практики</span> Startup <br /> Academy
+            <span>Практики</span> Startup Academy
           </h3>
           <p className={styles["trust-us__description"]}>
-            Реальный опыт <br /> акселерации стартапов <br /> и вывода проектов
-            <br />
-            на рынок
+            Реальный опыт акселерации стартапов и вывода проектов на рынок
           </p>
         </div>
       </div>
@@ -86,9 +84,9 @@ export const TrustUs = () => {
       {/* footer */}
       <Divider className={styles["divider-custom"]} fullWidth />
       <p className={styles["trust-us__footer"]}>
-        Наши знания и опыт проверены на практике и востребованы <br />
-        крупнейшими компаниями. <strong>Мы — официальные партнёры Сбера</strong>
-        , что <br /> подтверждает нашу экспертизу и надёжность.
+        Наши знания и опыт проверены на практике и востребованы крупнейшими
+        компаниями. <strong>Мы — официальные партнёры Сбера</strong>, что
+        подтверждает нашу экспертизу и надёжность.
       </p>
       <Divider className={styles["divider-custom"]} fullWidth />
     </section>

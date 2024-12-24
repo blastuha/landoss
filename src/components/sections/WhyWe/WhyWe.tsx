@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./WhyWe.module.scss";
-import Container from "@/components/container/Container";
 
 export const WhyWe = () => {
   return (
