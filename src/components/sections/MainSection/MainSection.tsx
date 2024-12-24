@@ -10,7 +10,9 @@ const MainSection = () => {
         <div className={styles["main-section__wrapper"]}>
           <div className={styles["main-section__content"]}>
             <h1 className={styles["main-section__title"]}>
-              «Нейро-прорыв БАЗА 2.0» <p>от Black Mesa IT! 🚀</p>
+              «Нейро-
+              <br />
+              прорыв БАЗА 2.0» <p>от Black Mesa IT! 🚀</p>
             </h1>
 
             <p className={styles["main-section__subtitle"]}>
@@ -65,19 +67,6 @@ const MainSection = () => {
           </div>
         </div>
       </div>
-      {/* Ваша эффективность — наше вдохновение! */}
-      {/* <div className={styles["main-section__effective"]}>
-        <h1 className={styles["main-section__effective-title"]}>
-          Ваша эффективность — наше вдохновение!
-        </h1>
-        <p className={styles["main-section__effective-subtitle"]}>
-          Станьте лидером, который управляет будущим своего бизнеса
-        </p>
-        <div className={styles["main-section__effective-buttons"]}>
-          <CustomButton>Записаться</CustomButton>
-          <CustomButton variant="outlined">Посмотреть программу</CustomButton>
-        </div>
-      </div> */}
     </section>
   );
 };

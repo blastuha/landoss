@@ -11,7 +11,7 @@
 
   &__wrapper {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
   }
@@ -21,6 +21,10 @@
     width: 100%;
     margin: 0 20px;
     height: 100%;
+
+    @media (max-width: 1200px) {
+      margin: 0 10px;
+    }
   }
 
   &__title {
@@ -29,6 +33,10 @@
     font-weight: 700;
     color: var(--green-1);
     line-height: 1.4;
+
+    @media (max-width: 1200px) {
+      font-size: 48px;
+    }
 
     p {
       font-family: "TTTravels";
@@ -41,12 +49,20 @@
     font-weight: 700;
     margin-top: 20px;
     line-height: 1.7;
+
+    @media (max-width: 1200px) {
+      font-size: 18px;
+    }
   }
 
   &__subtitle-expert {
     font-size: 22px;
     font-weight: 700;
     line-height: 1.7;
+
+    @media (max-width: 1200px) {
+      font-size: 18px;
+    }
   }
 
   &__list {
@@ -78,9 +94,18 @@
     padding: 34px;
     border-radius: 12px;
 
+    @media (max-width: 1200px) {
+      max-width: 300px;
+      margin: 0 10px;
+    }
+
     &-title {
       font-size: 20px;
       margin-bottom: 20px;
+
+      @media (max-width: 1200px) {
+        font-size: 18px;
+      }
     }
 
     &-wrapper {
@@ -113,41 +138,13 @@
       font-weight: 300;
       line-height: 1;
 
+      @media (max-width: 1200px) {
+        font-size: 14px;
+      }
+
       input {
         margin-right: 16px;
       }
     }
-  }
-
-  // Effective
-  &__effective {
-    max-width: 1160px;
-    width: 100%;
-    margin: 0 20px;
-  }
-
-  &__effective-title {
-    font-family: "TTTravels", Arial, sans-serif;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 1.17;
-    padding-top: 4px;
-    padding-bottom: 14px;
-    color: var(--green-1);
-  }
-
-  &__effective-subtitle {
-    line-height: 1.55;
-    margin-top: -6px;
-    padding-bottom: 3px;
-    font-size: 18px;
-    color: var(--white-1);
-    font-weight: 500;
-  }
-
-  &__effective-buttons {
-    display: flex;
-    gap: 20px;
-    padding-top: 60px;
   }
 }
