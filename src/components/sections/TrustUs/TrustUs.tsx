@@ -7,6 +7,22 @@ export const TrustUs = () => {
   return (
     <section className={styles["trust-us"]}>
       {/* title */}
+      <div className={styles["trust-us__mobile"]}>
+        <div className={styles["trust-us__mobile-container"]}>
+          <h2 className={styles["trust-us__mobile-title"]}>Почему мы?</h2>
+          <br />
+          <p className={styles["trust-us__mobile-subtitle"]}>
+            Кибер Миша и команда Black Mesa IT —
+          </p>
+          <br />
+          <p className={styles["trust-us__mobile-text"]}>
+            признанные эксперты по ИИ с опытом внедрения нейросетей в реальные
+            бизнес-проекты. Мы не просто следим за трендами, а создаем их.
+            Получите самые передовые и проверенные на практике знания и навыки.
+          </p>
+        </div>
+      </div>
+
       <h2 className={styles["trust-us__title"]}>Почему нам доверяют лидеры?</h2>
 
       {/* столбцы */}

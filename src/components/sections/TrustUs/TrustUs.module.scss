@@ -65,6 +65,10 @@
   padding-bottom: 20px;
   color: var(--white-1);
 
+  @media (max-width: 1200px) {
+    font-size: 22px;
+  }
+
   span {
     color: var(--green-1);
   }
@@ -76,9 +80,14 @@
   font-size: 18px;
   line-height: 1.55;
   color: var(--white-1);
+
+  @media (max-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 .trust-us__footer {
+  margin: 0 20px;
   font-family: "TTTravels", Arial, sans-serif;
   font-weight: 600;
   font-size: 26px;
@@ -87,8 +96,65 @@
   color: var(--white-1);
   padding-bottom: 90px;
 
+  @media (max-width: 1200px) {
+    font-size: 22px;
+  }
+
   strong {
     color: var(--green-1);
     font-weight: 600;
   }
+}
+
+// Mobile Block
+
+.trust-us__mobile {
+  display: none;
+  padding: 0 20px;
+  background-color: var(--green-1);
+
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  width: 100vw;
+
+  @media (max-width: 960px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.trust-us__mobile-container {
+  display: flex;
+  flex-direction: column;
+  padding: 45px 0 60px 0;
+  max-width: 600px;
+  text-align: left;
+}
+
+.trust-us__mobile-title {
+  font-family: "TTTravels", Arial, sans-serif;
+  font-weight: 600;
+  color: var(--black-1);
+  line-height: 1.17;
+  font-size: 30px;
+  margin-bottom: 18px;
+}
+
+.trust-us__mobile-subtitle {
+  line-height: 1.55;
+  font-size: 16px;
+  box-sizing: content-box;
+  font-weight: 700;
+  font-family: TTTravels;
+  color: var(--black-1);
+}
+
+.trust-us__mobile-text {
+  font-family: "Manrope", Arial, sans-serif;
+  line-height: 1.55;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black-1);
 }

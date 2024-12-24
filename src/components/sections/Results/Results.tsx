@@ -1,9 +1,11 @@
 import React from "react";
 import styles from "./Results.module.scss";
+import { Divider } from "@/components/ui/Divider/Divider";
 
 export const Results = () => {
   return (
     <section className={styles.results}>
+      <Divider fullWidth />
       <h2 className={styles["results__title"]}>Ваши результаты после курса</h2>
       <div className={styles["results__list"]}>
         <div className={styles["results__item"]}>

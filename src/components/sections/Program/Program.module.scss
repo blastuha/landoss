@@ -4,6 +4,10 @@
   margin: 0 20px;
   padding-bottom: 90px;
 
+  @media (max-width: 1200px) {
+    margin: 0 10px;
+  }
+
   &__title {
     font-family: "TTTravels", Arial, sans-serif;
     font-weight: 600;
@@ -13,7 +17,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 105px;
-    color: #f7f7f7;
+    color: var(--white-1);
     font-size: 32px;
   }
 }

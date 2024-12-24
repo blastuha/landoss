@@ -21,13 +21,13 @@ export const ClientPage = () => {
         <Container>
           <MainSection />
           <CourseDetails />
-          {/* <Program />
+          <Program />
           <Benefits />
           <ChooseLvl />
           <Results />
           <WhyWe />
           <TrustUs />
-          <JoinUs /> */}
+          <JoinUs />
         </Container>
       </main>
     </div>

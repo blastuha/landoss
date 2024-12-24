@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./JoinUs.module.scss";
-import { Arrow } from "@/components/ui/Icons/Arrow/Arrow";
 
 export const JoinUs = () => {
   return (
@@ -46,7 +45,7 @@ export const JoinUs = () => {
           <svg
             role="presentation"
             className={styles["join-section__arrow"]}
-            style={{ fill: "#be69ff" }} // Исправлено style -> объект
+            style={{ fill: "#be69ff" }}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 80 180"
           >

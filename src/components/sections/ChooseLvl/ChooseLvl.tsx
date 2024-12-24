@@ -3,6 +3,7 @@
 import React from "react";
 import styles from "./ChooseLvl.module.scss";
 import { LvlCard } from "../../cards/LvlCard/LvlCard";
+import { Divider } from "@/components/ui/Divider/Divider";
 
 export const ChooseLvl = () => {
   return (

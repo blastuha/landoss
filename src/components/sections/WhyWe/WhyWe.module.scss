@@ -20,9 +20,11 @@
     margin: 0 auto;
     width: 100%;
     max-width: 1200px;
+    padding-inline: 20px;
 
     @media (max-width: 1200px) {
-      padding-inline: 20px;
+      max-width: 960px;
+      padding-inline: 10px;
     }
   }
 
@@ -36,6 +38,11 @@
 
     font-family: "TTTravels", Arial, sans-serif;
     color: var(--black-1);
+
+    @media (max-width: 1200px) {
+      max-width: 380px;
+      padding: 30px;
+    }
   }
 
   &__title {
@@ -45,6 +52,10 @@
     font-size: 24px;
     line-height: 1.35;
     margin-bottom: 18px;
+
+    @media (max-width: 1200px) {
+      font-size: 22px;
+    }
   }
 
   &__subtitle {
@@ -62,5 +73,10 @@
     font-size: 18px;
     line-height: 1.55;
     font-weight: 500;
+
+    @media (max-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.55;
+    }
   }
 }
