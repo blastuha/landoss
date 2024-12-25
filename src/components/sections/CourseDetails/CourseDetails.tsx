@@ -3,7 +3,7 @@ import { Divider } from "../../ui/Divider/Divider";
 import styles from "./CourseDetails.module.scss";
 import { CustomButton } from "../../ui/CustomButton/CustomButton";
 
-export const CourseDetails = () => {
+export const CourseDetails = ({ openModal }: { openModal: () => void }) => {
   return (
     <section className={styles["course-details"]}>
       <Divider fullWidth />
@@ -15,7 +15,7 @@ export const CourseDetails = () => {
           Станьте лидером, который управляет будущим своего бизнеса
         </p>
         <div className={styles["course-details__effective-buttons"]}>
-          <CustomButton>Записаться</CustomButton>
+          <CustomButton onClick={openModal}>Записаться</CustomButton>
           <CustomButton variant="outlined">Посмотреть программу</CustomButton>
         </div>
       </div>

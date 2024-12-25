@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import styles from "./ClientPage.module.scss";
 import { Header } from "@/components/layout/Header/Header";
 import Container from "@/components/container/Container";
@@ -12,24 +12,31 @@ import { Results } from "@/components/sections/Results/Results";
 import { WhyWe } from "@/components/sections/WhyWe/WhyWe";
 import { TrustUs } from "@/components/sections/TrustUs/TrustUs";
 import { JoinUs } from "@/components/sections/JoinUs/JoinUs";
+import { ModalForm } from "@/components/ui/ModalForm/ModalForm";
 
 export const ClientPage = () => {
+  const [isModalVisible, setModalVisible] = useState(false);
+
+  const openModal = () => setModalVisible(true);
+  const closeModal = () => setModalVisible(false);
+
   return (
     <div className={styles.page}>
       <Header />
       <main className={styles.main}>
         <Container>
           <MainSection />
-          <CourseDetails />
+          <CourseDetails openModal={openModal} />
           <Program />
           <Benefits />
           <ChooseLvl />
           <Results />
           <WhyWe />
           <TrustUs />
-          <JoinUs />
+          <JoinUs openModal={openModal} />
         </Container>
       </main>
+      <ModalForm isVisible={isModalVisible} onClose={closeModal} />
     </div>
   );
 };

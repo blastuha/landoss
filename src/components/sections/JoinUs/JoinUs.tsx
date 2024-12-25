@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./JoinUs.module.scss";
 
-export const JoinUs = () => {
+export const JoinUs = ({ openModal }: { openModal: () => void }) => {
   return (
     <section className={styles["join-section"]}>
       <h2 className={styles["join-section__title"]}>
@@ -49,7 +49,7 @@ export const JoinUs = () => {
         >
           <path d="M31.5 47c-1.1-.9-2.7-.7-3.5.4L20.2 57V5.8c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5V57l-7.8-9.7c-.8-1-2.4-1.2-3.5-.3-1.1.9-1.2 2.4-.4 3.5l12.2 15.2c.5.6 1.2.9 1.9.9s1.5-.3 1.9-.9l12.2-15.2c1-1.1.9-2.6-.2-3.5z"></path>
         </svg>
-        <button className={styles["join-section__button"]}>
+        <button className={styles["join-section__button"]} onClick={openModal}>
           <span>Записаться</span>
 
           <svg

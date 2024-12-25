@@ -1,0 +1,123 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Затемнение фона */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.modal__content {
+  position: relative;
+  background-color: white;
+  border-radius: 8px;
+  padding: 40px 45px;
+  max-width: 460px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.modal__title {
+  font-family: "TTTravels", Arial, sans-serif;
+  font-weight: 600;
+  color: #000000;
+  line-height: 1.23;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal__inputBlock {
+  background: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.modal__input {
+  font-family: "TTTravels";
+  font-weight: 600;
+  height: 50px;
+  padding: 0 18px;
+  outline: none;
+  border-radius: 8px;
+  border: 2px solid #cccccc2c;
+  background-color: var(--white-1);
+  color: var(--black-1);
+  opacity: 1;
+  font-size: 18px;
+  line-height: 1;
+  opacity: 0.8;
+}
+
+.modal__placeholder {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-size: 14px;
+  color: #aaa;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.modal__error {
+  font-size: 12px;
+  color: red;
+  display: block; /* Показывать только при ошибке */
+}
+
+.modal__checkboxWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.modal__checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.modal__checkboxText {
+  text-align: left;
+  font-size: 14px;
+}
+
+.modal__button {
+  background-color: var(--green-1);
+  color: var(--black-1);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal__button:hover {
+  background-color: #00d581;
+}

@@ -2,8 +2,7 @@
 
 import React from "react";
 import styles from "./ChooseLvl.module.scss";
-import { LvlCard } from "../../cards/LvlCard/LvlCard";
-import { Divider } from "@/components/ui/Divider/Divider";
+import { LvlCard } from "@/components/ui/Cards/LvlCard/LvlCard";
 
 export const ChooseLvl = () => {
   return (

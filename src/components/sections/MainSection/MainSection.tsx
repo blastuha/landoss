@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./MainSection.module.scss";
 import { CustomButton } from "../../ui/CustomButton/CustomButton";
-import { Divider } from "@/components/ui/Divider/Divider";
 
 const MainSection = () => {
   return (
