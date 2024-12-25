@@ -4,6 +4,12 @@ import styles from "./CourseDetails.module.scss";
 import { CustomButton } from "../../ui/CustomButton/CustomButton";
 
 export const CourseDetails = ({ openModal }: { openModal: () => void }) => {
+  const scrollToProgram = () => {
+    const programSection = document.getElementById("program");
+    if (programSection) {
+      programSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section className={styles["course-details"]}>
       <Divider fullWidth />
@@ -16,7 +22,9 @@ export const CourseDetails = ({ openModal }: { openModal: () => void }) => {
         </p>
         <div className={styles["course-details__effective-buttons"]}>
           <CustomButton onClick={openModal}>Записаться</CustomButton>
-          <CustomButton variant="outlined">Посмотреть программу</CustomButton>
+          <CustomButton variant="outlined" onClick={scrollToProgram}>
+            Посмотреть программу
+          </CustomButton>
         </div>
       </div>
 

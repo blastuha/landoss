@@ -147,6 +147,10 @@
       @media (max-width: 1200px) {
         font-size: 18px;
       }
+
+      @media (max-width: 960px) {
+        max-width: 100%;
+      }
     }
 
     &-wrapper {
@@ -174,7 +178,7 @@
     &-checkbox {
       display: flex;
       align-items: center;
-      font-size: 15px;
+      font-size: 14px;
       font-family: "Manrope", Arial, sans-serif;
       font-weight: 300;
       line-height: 1;
@@ -185,6 +189,9 @@
 
       input {
         margin-right: 16px;
+        width: 22px;
+        height: 22px;
+        cursor: pointer;
       }
     }
   }

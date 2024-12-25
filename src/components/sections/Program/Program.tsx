@@ -86,7 +86,7 @@ const accordionItems = [
 
 export const Program = () => {
   return (
-    <section className={styles["program"]}>
+    <section id="program" className={styles["program"]}>
       <h1 className={styles["program__title"]}>
         Программа курса «Нейро-Прорыв БАЗА 2.0»
       </h1>
