@@ -27,7 +27,7 @@ export const ModalForm = ({
     }
 
     // Проверка телефона
-    if (!phone.trim() || phone.includes("_")) {
+    if (!phone.trim() || phone.length < 18) {
       setPhoneError(true);
     } else {
       setPhoneError(false);
@@ -51,27 +51,26 @@ export const ModalForm = ({
     }
 
     console.log("Form submitted", { name, phone, isCheckboxChecked });
-    // Здесь можно добавить логику отправки данных
   };
 
   const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setName(e.target.value);
     if (e.target.value.trim()) {
-      setNameError(false); // Убираем ошибку, если имя заполнено
+      setNameError(false);
     }
   };
 
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setPhone(e.target.value);
     if (e.target.value.trim() && !e.target.value.includes("_")) {
-      setPhoneError(false); // Убираем ошибку, если телефон заполнен корректно
+      setPhoneError(false);
     }
   };
 
   const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setIsCheckboxChecked(e.target.checked);
     if (e.target.checked) {
-      setCheckboxError(false); // Убираем ошибку, если чекбокс отмечен
+      setCheckboxError(false);
     }
   };
 
